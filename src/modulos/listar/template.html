@@ -1,0 +1,25 @@
+
+<table class='table '>
+    <thead class='thead-dark'>
+        <tr>
+          <!--<th>ISBN nº</th> -->
+            <th>Libro</th>
+            <th>Autor</th>
+            <th>Genero</th>
+            <th>Portada</th>
+            <th>Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each mostrarLibros}}
+            <tr>
+                <!--<td>{{id}}</td>-->
+                <td>{{libro}}</td>
+                <td>{{autor}}</td>
+                <td>{{genero}}</td>
+                <td><img width='150px' src={{portada}}></img></td>
+                <td>{{descripcion}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

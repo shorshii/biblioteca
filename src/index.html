@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Data Libros</title>
+  </head>
+
+  <body class= "body">
+        <div class="container">
+        <h1 class= "titler"> 📚📙📖 DataLibros 📘📖📚</h1>
+        <section class="header" id="header">
+        <nav class='nav-bar navbar-expand-lg navbar-light bg-light'>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="/listar">Lista de Libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/nuevar">Agregar Nuevo Libro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/buscar">Buscador</a>
+          </li>
+        </ul>
+          </nav>
+          <main>
+            <section class= "seccion">
+              <p> Datalibros almacena diferentes titulos de libros por nombre, genero y autor. </p>
+            </section>
+          </main>
+        </section>
+        <section class='content' id='main'></section>
+
+        <footer style="text-align: center; padding-top: 10%">
+          <article>
+        <small> copyright ® todos los derechos reservados  </small>
+        </article >
+        <article>
+        <mark> PAGE BY: GEORGINA VALENZANO 2do A-IFTS 16 </mark>
+        </article>
+      </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyCP_kcwcFVE8o0_g-muUOOvo9XJaAml1PA",
+        authDomain: "listado-de-libros-ifts16-gfv.firebaseapp.com",
+        databaseURL: "https://listado-de-libros-ifts16-gfv.firebaseio.com",
+        projectId: "listado-de-libros-ifts16-gfv",
+        storageBucket: "listado-de-libros-ifts16-gfv.appspot.com",
+        messagingSenderId: "378114646936"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+
+</html>

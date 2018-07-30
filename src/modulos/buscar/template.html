@@ -1,0 +1,41 @@
+
+<table class='table '>
+  <form action="" class='form'>
+      {{mensaje}}
+     <fieldset>
+        <legend>Busca tu libro</legend>
+        <div class="form-group">
+          <label for="">Libro</label>
+          <input class="form-control" type="text" placeholder="Busca por titulo genero o autor" name='busca' id='fBuscar' />
+      </div>
+      <div class="actions">
+          <button id='boton-nuevo' class='btn btn-primary'>Buscar</button>
+      </div>
+    </fieldset>
+
+  </form>
+</br>
+    <thead class='thead-dark'>
+      {{#each buscarLibros}}
+        <tr>
+          <!--<th>ISBN nº</th> -->
+            <th>Libro</th>
+            <th>Autor</th>
+            <th>Genero</th>
+            <th>Portada</th>
+            <th>Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <tr>
+                <!--<td>{{id}}</td>-->
+                <td>{{libro}}</td>
+                <td>{{autor}}</td>
+                <td>{{genero}}</td>
+                <td><img width='150px' src={{portada}}></img></td>
+                <td>{{descripcion}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
